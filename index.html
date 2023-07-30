@@ -9,14 +9,19 @@
 </head>
 <body>
     <main>
-        <section>
-            <select class="select__list">
-                <option disabled selected>выберите из списка</option>
-            </select>
-            <input type="number" name="number" placeholder="введите число"> 
-            <input type="submit" name="submit">
+        <section class="section">
+            <h1 class="title">Кого или что будем искать?</h1>
+            <form class="form" name="form">
+                <select class="select__list">
+                    <option selected id="planets">Планеты</option>
+                    <option id="characters">Персонажи</option>
+                    <option id="films">Фильмы</option>
+                </select>
+                <input type="number" name="number" placeholder="введите число" class="input__number" >
+                <input type="submit" name="submit" class="btn">
+            </form>
+            <div class="result"></div>
         </section>
-        <section class="test"></section>
     </main>
     <script src="./index.js"></script>
 </body>
